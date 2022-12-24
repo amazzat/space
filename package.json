@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@bundlr-network/client": "^0.9.11",
     "@rainbow-me/rainbowkit": "^0.8.1",
     "ethers": "^5.7.2",
     "next": "13.1.1",

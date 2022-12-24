@@ -1,14 +1,10 @@
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
-import { arbitrum, mainnet, optimism, polygon } from "wagmi/chains";
-import { alchemyProvider } from "wagmi/providers/alchemy";
+import { bscTestnet } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 
-const { chains, provider } = configureChains(
-  [mainnet, polygon, optimism, arbitrum],
-  [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]
-);
+const { chains, provider } = configureChains([bscTestnet], [publicProvider()]);
 
 const { connectors } = getDefaultWallets({
   appName: "My RainbowKit App",
