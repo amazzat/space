@@ -11,6 +11,7 @@
   "dependencies": {
     "@bundlr-network/client": "^0.9.11",
     "@rainbow-me/rainbowkit": "^0.8.1",
+    "degen": "^0.0.118",
     "ethers": "^5.7.2",
     "next": "13.1.1",
     "react": "18.2.0",
