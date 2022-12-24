@@ -1,13 +1,14 @@
 import "@rainbow-me/rainbowkit/styles.css";
+import "../styles/globals.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import { configureChains, createClient, WagmiConfig } from "wagmi";
-import { bscTestnet } from "wagmi/chains";
+import { bsc } from "wagmi/chains";
 import { publicProvider } from "wagmi/providers/public";
 
-const { chains, provider } = configureChains([bscTestnet], [publicProvider()]);
+const { chains, provider } = configureChains([bsc], [publicProvider()]);
 
 const { connectors } = getDefaultWallets({
-  appName: "My RainbowKit App",
+  appName: "Space",
   chains,
 });
 
