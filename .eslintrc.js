@@ -9,4 +9,8 @@ module.exports = configure({
     presets.prettier(),
     presets.imports(),
   ],
+  extend: {
+    plugins: ["tailwindcss"],
+    extends: ["plugin:tailwindcss/recommended"],
+  },
 });
