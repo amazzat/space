@@ -58,16 +58,6 @@ module.exports = {
         70: "#d87407",
       },
     },
-    fontSize: {
-      xs: "0.75rem",
-      sm: "0.875rem",
-      base: "1rem",
-      lg: "1.25rem",
-      xl: "1.5rem",
-      "2xl": "1.75rem",
-      "3xl": "2rem",
-      "4xl": "2.5rem",
-    },
   },
   plugins: [],
 };
